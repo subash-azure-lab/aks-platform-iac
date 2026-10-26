@@ -9,5 +9,5 @@ locals {
 resource "azurerm_resource_group" "bootstrap" {
   name     = "rg-aksplat-boot-${var.environment}"
   location = var.location
-  tags                = local.tags
+  tags     = local.tags
 }
