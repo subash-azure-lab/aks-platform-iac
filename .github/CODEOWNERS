@@ -1,0 +1,11 @@
+# Default owner for everything
+*                     @Subashvmb
+
+# Network and runner layer
+/bootstrap/           @Subashvmb
+
+# Platform layer (AKS, ACR, storage, Key Vault)
+/platform/            @Subashvmb
+
+# The pipeline itself: changes here are the most sensitive
+/.github/workflows/   @Subashvmb
