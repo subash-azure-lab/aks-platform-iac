@@ -1,0 +1,19 @@
+# Terraform working files
+.terraform/
+*.tfstate
+*.tfstate.*
+tfplan
+crash.log
+
+# Secrets (never commit)
+*.pfx
+*.pem
+*.key
+.env
+secrets.auto.tfvars
+*.secret.tfvars
+
+# Mac and editor clutter
+.DS_Store
+.vscode/
+.idea/
