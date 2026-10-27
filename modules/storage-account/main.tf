@@ -1,4 +1,8 @@
 resource "azurerm_storage_account" "this" {
+  #checkov:skip=CKV_AZURE_206:Replication is a variable (LRS in the lab, GRS or ZRS in prod).
+  #checkov:skip=CKV_AZURE_33:The Queue service is not used; only Blob is.
+  #checkov:skip=CKV2_AZURE_33:False positive. The private endpoint exists in the platform layer (module pe_storage); Checkov cannot follow module inputs.
+  #checkov:skip=CKV2_AZURE_1:Customer-managed keys need a Key Vault key and identity; platform-managed keys are enough for the lab.
   name                            = var.name
   location                        = var.location
   resource_group_name             = var.resource_group_name
