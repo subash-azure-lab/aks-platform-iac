@@ -1,0 +1,6 @@
+environment          = "prod"
+cost_center          = "AI-Platform"
+unique_suffix        = "sub01"
+spoke_address_prefix = "10.21.0.0/16"
+aks_subnet_prefix    = "10.21.0.0/22"
+pe_subnet_prefix     = "10.21.4.0/24"
